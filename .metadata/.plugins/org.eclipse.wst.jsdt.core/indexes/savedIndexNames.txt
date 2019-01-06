@@ -1,0 +1,9 @@
+INDEX VERSION 1.4+C:\Users\allah\Desktop\ws-annot\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+3458301130.index
+1825755893.index
+1415698417.index
+1621264103.index
+1026492011.index
+3286703263.index
+2162186008.index
+1412521746.index

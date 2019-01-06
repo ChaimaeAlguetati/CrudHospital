@@ -1,0 +1,24 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+	<servlet>
+		<servlet-name>patient</servlet-name>
+		<servlet-class>com.hospital.is.PatientServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>CreatePatient</servlet-name>
+		<display-name>CreatePatient</display-name>
+		<description></description>
+		<servlet-class>com.hospital.is.CreatePatient</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>patient</servlet-name>
+		<url-pattern>/patient</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>CreatePatient</servlet-name>
+		<url-pattern>/CreatePatient</url-pattern>
+	</servlet-mapping>
+</web-app>

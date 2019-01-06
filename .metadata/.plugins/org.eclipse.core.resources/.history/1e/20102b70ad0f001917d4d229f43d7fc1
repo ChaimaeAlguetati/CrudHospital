@@ -1,0 +1,51 @@
+package com.hospital.is;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+
+import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+/**
+ * Servlet implementation class CreatePatient
+ */
+
+public class CreatePatient extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+       
+    /**
+     * @see HttpServlet#HttpServlet()
+     */
+    public CreatePatient() {
+        super();
+        // TODO Auto-generated constructor stub
+    }
+
+
+	
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		response.setContentType("text/html");
+		PrintWriter printWriter = response.getWriter();
+		String firstName = request.getParameter("firstName");
+		String lastName = request.getParameter("lastName");
+		String address = request.getParameter("address");
+		String phone = request.getParameter("phone");
+		String birthdate = request.getParameter("birthdate");
+		if(firstName.isEmpty()||lastName.isEmpty()||address.isEmpty()||phone.isEmpty()||birthdate.isEmpty())
+		{
+			RequestDispatcher rd = request.getRequestDispatcher("createPatient.jsp");
+			printWriter.println("<font color=red>Please fill all the fields</font>");
+			rd.include(request, response);
+		}
+		else
+		{
+			RequestDispatcher rd = request.getRequestDispatcher("p");
+			rd.forward(request, response);
+		}
+	}
+
+}

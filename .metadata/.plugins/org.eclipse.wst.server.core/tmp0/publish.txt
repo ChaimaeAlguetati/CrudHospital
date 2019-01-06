@@ -1,0 +1,4 @@
+#Tomcat publish data
+#Sun Jan 06 19:30:51 CET 2019
+org.eclipse.jst.j2ee.server\:hospital-manager=WEB-INF/lib/hospital-manager-0.0.1-SNAPSHOT.jar
+org.eclipse.jst.j2ee.server\:hospital-repository=WEB-INF/lib/hospital-repository-0.0.1-SNAPSHOT.jar
